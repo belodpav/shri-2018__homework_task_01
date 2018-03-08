@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 480px) {
+  .header {
+    justify-content: flex-start;
+  }
+}
