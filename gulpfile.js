@@ -38,10 +38,8 @@ gulp.task('server', () => {
     }), ['css']);
 });
 
-
-
 gulp.task('build', ['clean'], () => {
-  gulp.start(['html', 'css', 'images', 'fonts']);
+    gulp.start(['html', 'css', 'images', 'fonts']);
 });
 
 gulp.task('html', () => {
@@ -53,7 +51,6 @@ gulp.task('html', () => {
 
 gulp.task('css', () => {
     getFileNames.then((files) => {
-       
         gulp.src(files.dirs.map((dir) => dir + '/**/*.css'))
             .pipe(concat('style.css'))
             .pipe(postcss([autoprefixer()]))
@@ -64,15 +61,18 @@ gulp.task('css', () => {
 
 gulp.task('fonts', () => {
     gulp.src('./fonts/*')
-        .pipe(gulp.dest(path.join(params.out, 'fonts')))
+        .pipe(gulp.dest(path.join(params.out, 'fonts')));
 });
 
 gulp.task('images', () => {
-    getFileNames.then((source) => {
-        gulp.src(source.dirs.map((dir) => {
-            const imgGlob = path.resolve(dir) + '/*.{png,jpg,svg}';
-            return imgGlob;
-        }))
-            .pipe(gulp.dest(path.join(params.out, 'images')));
-    }).done();
+
+    const levels = params.levels.map((level) => {
+        const imgGlob = level + '/**/*.{png,jpg,svg}';
+
+        return imgGlob;
+    });
+
+    return gulp.src(levels)
+        .pipe(rename({dirname: ''}))
+        .pipe(gulp.dest(params.out + '/images/'));
 });

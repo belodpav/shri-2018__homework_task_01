@@ -31,7 +31,7 @@
 }
 
 .font {
-  font-family: 'YS Text';
+  font-family: 'YS Text', Helvetica, Arial, sans-serif;
 }
 .header {
     display: -ms-flexbox;
@@ -60,4 +60,128 @@
     background-position: center center;
     font-size: 0;
     line-height: 0;
+}
+
+.feed {
+  padding: 0 15px;
+}
+
+.card-first {
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 51px;
+}
+
+.card-first__controls {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;   
+}
+
+.card-first__desc {
+  padding-right: 20px;
+  margin: 0;
+  height: 60px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-first__desc-box {
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+
+.card-first__img-box {
+    
+}
+
+.card-first__title {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 19px;
+  background: #fff;
+}
+
+.img-box {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.img-box__img {
+    
+}
+
+.img-box__title {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 10px 10px;
+  width: 100%;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,0));
+}
+
+.button {
+  outline: none;
+  cursor: pointer;
+}
+
+.button_type_icon {
+  background: inherit;
+  border: none;
+  padding: 0;
+}
+
+.icon {
+  display: inline-block;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+.icon_type_heart-grey {
+  width: 17px;
+  height: 17px;
+  background-image: url(images/icon_type_heart-grey.svg); 
+}
+
+.icon_type_heart-white {
+  width: 17px;
+  height: 17px;
+  background-image: url(images/icon_type_heart-white.svg); 
+}
+
+.icon_type_more-grey {
+  width: 22px;
+  height: 6px;
+  background-image: url(images/icon_type_more-grey.svg); 
+}
+
+.icon_type_more-white {
+  width: 22px;
+  height: 6px;
+  background-image: url(images/icon_type_more-white.svg); 
 }
