@@ -1,8 +1,7 @@
-.card-first__title {
+.card-fourth__title {
   position: absolute;
   z-index: 3;
   top: 0;
   left: 0;
   width: 100%;
-  padding-bottom: 7px;
 }

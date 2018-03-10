@@ -25,6 +25,11 @@ gulp.task('clean', () => {
     return del(params.out);
 });
 
+gulp.task('selectJS', () => {
+    gulp.src('./scripts/*.js')
+        .pipe(gulp.dest(path.join(params.out, 'scripts')));
+});
+
 gulp.task('server', () => {
     browserSync.init({
         server: params.out
@@ -39,7 +44,7 @@ gulp.task('server', () => {
 });
 
 gulp.task('build', ['clean'], () => {
-    gulp.start(['html', 'css', 'images', 'fonts']);
+    gulp.start(['selectJS', 'html', 'css', 'images', 'fonts']);
 });
 
 gulp.task('html', () => {
@@ -50,13 +55,11 @@ gulp.task('html', () => {
 });
 
 gulp.task('css', () => {
-    getFileNames.then((files) => {
-        gulp.src(files.dirs.map((dir) => dir + '/**/*.css'))
-            .pipe(concat('style.css'))
-            .pipe(postcss([autoprefixer()]))
-            .pipe(gulp.dest(params.out))
-            .pipe(reload({stream: true}));
-    }).done();
+    gulp.src(params.levels.map((dir) => dir + '/**/*.css'))
+        .pipe(concat('style.css'))
+        .pipe(postcss([autoprefixer()]))
+        .pipe(gulp.dest(params.out))
+        .pipe(reload({stream: true}));
 });
 
 gulp.task('fonts', () => {

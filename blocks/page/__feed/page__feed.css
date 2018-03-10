@@ -1,0 +1,14 @@
+.page__feed {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 344px;
+}
+
+
+@media (min-width: 768px) {
+  .page__feed {
+    padding: 0;
+    width: 704px;
+    max-width: 100%;
+  }
+}

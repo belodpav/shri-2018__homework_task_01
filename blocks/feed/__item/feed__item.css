@@ -1,0 +1,9 @@
+.feed__item {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 1024px) {
+  .feed__item {
+    margin-bottom: 0;
+  }
+}

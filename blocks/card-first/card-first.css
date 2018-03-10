@@ -1,5 +1,8 @@
 .card-first {
-  box-sizing: border-box;
-  position: relative;
   padding-top: 51px;
+}
+@media (min-width: 768px) {
+  .card-first {
+    height: 305px;
+  }
 }

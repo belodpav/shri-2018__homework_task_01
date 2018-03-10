@@ -12,26 +12,17 @@
   <div class="page__header header">
     <a class="header__logo logo" href="/">Яндекс Дзен</a>
   </div>
-  <div class="page__feed feed">
-    <div class="card-first">
-      <div class="card-first__title">Civilization VI: Rise and Fall review: 
-        A few turns closer to a Golden Age
-      </div>
+  <div class="page__feed feed"></div>
+
+  <script id="card-first" type="template/my">
+    <div class="feed__item feed__item_size_3-6 card card-first">
+      <div class="card__title card-first__title" style="color:{{titleColor}}">{{title}}</div>
       <div class="card-first__img-box img-box">
-        <img class="img-box__img" src="http://via.placeholder.com/344x180/" alt="Picture" title="Picture">
-        <div class="img-box__title">Arstechnica</div>
+        <img class="img-box__img img" src="{{image}}" alt="Picture" title="Picture">
+        <div class="img-box__title">{{channelName}}</div>
       </div>
       <div class="card-first__desc-box">
-        <p class="card-first__desc">
-            Every Civilization game since Civilization IV has followed the same
-            trajectory: the initial release remixes and reinterprets some base
-            systems from the previous game, but franchise veterans deem it anemic
-            because it has fewer systems and features than its fully
-            expanded predecessor. From there, new expansions
-            gradually reintroduce the complexity that was
-            lost in the move to a new game until many
-            of those players conclude that it is the best game in the series yet.
-        </p>
+        <p class="card-first__desc">{{description}}</p>
         <div class="card-first__controls">
           <button class="button button_type_icon">
             <span class="icon icon_type_more-grey"></span>
@@ -42,6 +33,83 @@
         </div>
       </div>
     </div>
-  </div> 
+  </script>
+
+
+
+  <script id="card-second" type="template/my">
+    <div class="feed__item feed__item_size_2-6 card card_size_m card-second">
+      <div class="card-second__high-layer">
+        <div 
+          class="card__title card-second__title"
+          style="color:{{titleColor}}">{{title}}</div>
+        <div class="card-second__controls">
+          <button class="button button_type_icon">
+            <span class="icon icon_type_more-grey"></span>
+          </button>         
+          <button class="button button_type_icon">
+            <span class="icon icon_type_heart-grey"></span>
+          </button>
+        </div>
+      </div>
+      <div class="card-second__img-box img-box">
+        <img class="img-box__img img" src="{{image}}" alt="Picture" title="Picture">
+        <div class="img-box__title">{{channelName}}</div>
+      </div>
+    </div>
+  </script>
+
+
+  
+  <script id="card-third" type="template/my">
+    <div class="feed__item feed__item_size_2-6 card card_size_m card-third">
+      <div class="card__title card-third__title" style="color:{{titleColor}}">{{title}}</div>
+      <div class="card-third__desc-box">
+        <p class="card-third__desc">{{description}}</p>
+        <div class="card-third__footer">
+          <div class="card-third__author">{{channelName}}</div>
+          <div class="card-third__controls">
+            <button class="button button_type_icon">
+              <span class="icon icon_type_more-grey"></span>
+            </button>         
+            <button class="button button_type_icon card-third__last-control">
+              <span class="icon icon_type_heart-grey"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script id="card-fourth" type="template/my">
+    <div class="feed__item card feed__item_size_6-6 card-fourth">
+      <div class="card-fourth__img-box img-box">
+        <img class="img-box__img img" src="{{image}}" alt="Picture" title="Picture">
+        <div class="img-box__title">{{channelName}}</div>
+      </div>
+      <div class="card-fourth__subcard card-third">
+        <div class="card__title card-third__title" style="color:{{titleColor}}">{{title}}</div>
+        <div class="card-third__desc-box">
+          <p class="card-third__desc">{{description}}</p>
+          <div class="card-third__footer">
+            <div class="card-fourth__controls">
+              <button class="button button_type_icon">
+                <span class="icon icon_type_more-grey"></span>
+              </button>         
+              <button class="button button_type_icon">
+                <span class="icon icon_type_heart-grey"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+
+  <script src="scripts/data.js"></script>
+  <script src="scripts/template.js"></script>
+  <script src="scripts/helpers.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
