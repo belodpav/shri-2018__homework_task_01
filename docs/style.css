@@ -173,11 +173,6 @@
   padding-top: 1rem;
 }
 
-.card-first__img-box {
-  margin-top: .7rem;    
-}
-
-
 .card-first__title {
   position: absolute;
   z-index: 3;
@@ -186,6 +181,11 @@
   width: 100%;
   padding-bottom: .7rem;
 }
+
+.card-first__img-box {
+  margin-top: .7rem;    
+}
+
 
 .card-fourth__controls {
   width: 100%;
@@ -371,7 +371,7 @@
           font-feature-settings: "liga", "kern";
 }
 
-.header__logo {
+.img-box__img {
     
 }
 
@@ -399,10 +399,6 @@
   background-image: url(images/icon_type_more-white.svg); 
 }
 
-.img-box__img {
-    
-}
-
 .img-box__title {
   box-sizing: border-box;
   position: absolute;
@@ -416,6 +412,10 @@
   line-height: 1;
   color: #fff;
   background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,0));
+}
+
+.header__logo {
+    
 }
 
 .page__feed {
