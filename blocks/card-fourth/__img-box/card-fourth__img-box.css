@@ -2,9 +2,8 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card-fourth__img-box {
     display: inline-block;
   }
-  
 }

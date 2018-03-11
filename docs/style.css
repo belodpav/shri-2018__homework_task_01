@@ -1,18 +1,18 @@
-.button {
-  outline: none;
-  cursor: pointer;
-}
-
 .card {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
 }
 
+.button {
+  outline: none;
+  cursor: pointer;
+}
+
 .card-first {
   padding-top: 5.1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card-first {
     height: 30.5rem;
   }
@@ -21,7 +21,7 @@
  
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card-fourth {
     display: -ms-grid;
     display: grid;
@@ -47,7 +47,7 @@
   
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .feed {
     display: -ms-grid;
     display: grid;
@@ -70,7 +70,7 @@
         justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .header {
     width: 70.4rem;
     margin: 0 auto;
@@ -90,6 +90,14 @@
   width: 100%;
 }
 
+.img-box {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  border-radius: .6rem;
+}
+
 .logo {
     display: inline-block;
     width: 9.1rem;
@@ -102,23 +110,9 @@
     line-height: 0;
 }
 
-.img-box {
-  position: relative;
-  font-size: 0;
-  line-height: 0;
-  overflow: hidden;
-  border-radius: .6rem;
-}
-
 .page {
   margin: 0 0 3rem;
 }
-.button_type_icon {
-  background: inherit;
-  border: none;
-  padding: 0;
-}
-
 .card__title {
   font-weight: 700;
   font-size: 1.9rem;
@@ -126,12 +120,12 @@
   background: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card_size_l {
     height: 24.3rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card_size_m {
     height: 23.6rem;
   }
@@ -139,10 +133,16 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card_size_s {
     height: 23rem;
   }
+}
+
+.button_type_icon {
+  background: inherit;
+  border: none;
+  padding: 0;
 }
 
 .card-first__controls {
@@ -207,11 +207,10 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card-fourth__img-box {
     display: inline-block;
   }
-  
 }
 
 .card-fourth__subcard {
@@ -308,7 +307,7 @@
       align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card-third__footer {
     position: absolute;
     bottom: 0;
@@ -337,7 +336,7 @@
   margin-bottom: 32px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .feed__item {
     margin-bottom: 0;
   }
@@ -414,7 +413,7 @@
   z-index: 2;
   font-size: 1.4rem;
   font-weight: 700;
-  line-height: 2.4rem;
+  line-height: 1;
   color: #fff;
   background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,0));
 }
@@ -426,7 +425,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .page__feed {
     padding: 0;
     width: 70.4rem;

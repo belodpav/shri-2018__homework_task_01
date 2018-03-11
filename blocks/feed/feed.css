@@ -2,7 +2,7 @@
   
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .feed {
     display: grid;
     grid-template-columns: repeat(6, calc(62.4rem / 6));

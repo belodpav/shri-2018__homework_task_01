@@ -1,7 +1,7 @@
 .card-first {
   padding-top: 5.1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card-first {
     height: 30.5rem;
   }

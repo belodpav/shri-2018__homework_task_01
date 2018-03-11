@@ -2,7 +2,7 @@
  
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card-fourth {
     display: grid;
     grid-template-columns: 46.4rem 22.4rem;

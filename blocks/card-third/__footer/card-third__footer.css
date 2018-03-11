@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card-third__footer {
     position: absolute;
     bottom: 0;
