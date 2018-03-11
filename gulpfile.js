@@ -57,7 +57,9 @@ gulp.task('html', () => {
 gulp.task('css', () => {
     gulp.src(params.levels.map((dir) => dir + '/**/*.css'))
         .pipe(concat('style.css'))
-        .pipe(postcss([autoprefixer()]))
+        .pipe(postcss([autoprefixer({
+            browsers: ['last 4 versions']
+        })]))
         .pipe(gulp.dest(params.out))
         .pipe(reload({stream: true}));
 });

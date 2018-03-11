@@ -367,8 +367,7 @@
 }
 
 .font_face_ya {
-  -webkit-font-feature-settings: "liga", "kern";
-          font-feature-settings: "liga", "kern";
+  font-feature-settings: "liga", "kern";
 }
 
 .header__logo {
