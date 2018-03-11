@@ -1,9 +1,9 @@
 .card-first__desc {
-  padding-right: 20px;
+  padding-right: 2rem;
   margin: 0;
-  height: 60px;
-  font-size: 14px;
-  line-height: 20px;
+  height: 6rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   color: #000;
   overflow: hidden;
   text-overflow: ellipsis;

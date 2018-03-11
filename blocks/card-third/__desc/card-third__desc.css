@@ -1,8 +1,8 @@
 .card-third__desc {
   margin: 0;
   width: 100%;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
   color: #000000;
   overflow: hidden;
 }

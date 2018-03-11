@@ -5,10 +5,10 @@
 @media (min-width: 768px) {
   .card-fourth {
     display: grid;
-    grid-template-columns: 464px 224px;
+    grid-template-columns: 46.4rem 22.4rem;
     grid-template-rows: auto;
-    grid-column-gap: 16px;
+    grid-column-gap: 1.6rem;
 
-    height: 243px;
+    height: 24.3rem;
   }
 }
