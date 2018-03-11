@@ -1,12 +1,12 @@
+.button {
+  outline: none;
+  cursor: pointer;
+}
+
 .card {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-}
-
-.button {
-  outline: none;
-  cursor: pointer;
 }
 
 .card-first {
@@ -113,6 +113,12 @@
 .page {
   margin: 0 0 3rem;
 }
+.button_type_icon {
+  background: inherit;
+  border: none;
+  padding: 0;
+}
+
 .card__title {
   font-weight: 700;
   font-size: 1.9rem;
@@ -137,12 +143,6 @@
   .card_size_s {
     height: 23rem;
   }
-}
-
-.button_type_icon {
-  background: inherit;
-  border: none;
-  padding: 0;
 }
 
 .card-first__controls {
